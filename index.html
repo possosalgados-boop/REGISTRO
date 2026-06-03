@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Control de Registro</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="contenedor">
+        <h1>Sistema de Matricula</h1>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="cuenta">Cuenta:</label>
+        <input type="text" id="cuenta" name="cuenta"><br><br>
+        <label for="carrera">Carrera:</label>
+        <input type="text" id="carrera" name="carrera"><br><br>
+        <label for="asignatura">Asignatura:</label>
+        <input type="text" id="asignatura" name="asignatura"><br><br>
+        <button id="matricular">Matricular</button>
+        </div>
+
+        <div id="listado" style="margin-top: 30px;">
+        <h2>Estudiantes Registrados</h2>
+        <table id="tablaEstudiantes">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cuenta</th>
+                    <th>Carrera</th>
+                    <th>Asignatura</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTabla">
+                </tbody>
+        </table>
+    </div>
+
+        <script src="renderer.js"></script>
+    </body>
+</html>
